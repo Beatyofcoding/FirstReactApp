@@ -6,7 +6,8 @@ function App() {
   const greeting = "Hello World";
   return (
     <div >
-      <h1>Testing if it is Rendering out and printing the code!Hello World!</h1>
+      <h1>{greeting}</h1>
+      {/* <h1>Testing if it is Rendering out and printing the code!Hello World!</h1> */}
     </div>
   );
 }
