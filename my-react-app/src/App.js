@@ -3,10 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const greeting = "Hello World";
+  const testing = {
+    testing_one:"Hello",
+    testing_two:"World"
+  }
   return (
     <div >
-      <h1>{greeting}</h1>
+      <h1>{testing}</h1>
       {/* <h1>Testing if it is Rendering out and printing the code!Hello World!</h1> */}
     </div>
   );
