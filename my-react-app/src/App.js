@@ -1,6 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+const courses = [
+  {
+    id: 1;
+    title: "React - The Complete Guide (incl Hooks, React Router, Redux)",
+    author: "Maximilian Schwarzmuller",
+    hours_video: 40.5,
+    number_of_lectures: 490,
+    rating: 4.6,
+    url: "https://codingthesmartway.com/courses/react-complete-guide/"
+  },
+  {
+    
+  }
+]
 
 function App() {
   function getTestMsg(){
