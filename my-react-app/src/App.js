@@ -18,7 +18,8 @@ const courses = [
     number_of_lectures: 488,
     rating: 4.6,
     url: "https://codingthesmartway.com/courses/modern-react-with-redux/"
-
+  },
+    {
     id: 3,
     title: "The Complete React Developer Course (w/ Hooks and Redux)",
     author: "Andrew Mead",
@@ -31,14 +32,16 @@ const courses = [
 ];
 
 function App() {
-  function getTestMsg(){
-    return "Printing Test From Function";
-  }
+  
   return (
     <div >
-            <h1>{getTestMsg()}</h1>
+            <h1>Testing</h1>
+            {courses.map(function(course){
+              return <div>{course.title}</div>
       {/* <h1>Testing if it is Rendering out and printing the code!Hello World!</h1> */}
-    </div>
+            })
+          }
+      </div>
   );
 }
 
