@@ -35,7 +35,7 @@ function App() {
   
   return (
     <div >
-            <h1>Testing</h1>
+            <h1>Title Of Courses</h1>
             {courses.map(function(course){
               return <div>{course.title}</div>
       {/* <h1>Testing if it is Rendering out and printing the code!Hello World!</h1> */}
