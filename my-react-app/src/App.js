@@ -12,7 +12,7 @@ const courses = [
   },
   {
     id: 2,
-    title: "Modern React With Redux)",
+    title: "Modern React With Redux",
     author: "Stephen Grider",
     hours_video: 47.5,
     number_of_lectures: 488,
@@ -40,7 +40,9 @@ function App() {
             {courses.map(function(course){
               return (
                 <div key={course.id}>
-                  {course.title}
+                <span>
+                  <a href={course.url}><h4>{course.title}></h4></a>
+                </span>
                 </div>
               )
             })
