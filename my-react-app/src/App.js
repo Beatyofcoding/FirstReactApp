@@ -44,6 +44,7 @@ function App() {
                   <a href={course.url}><h4>{course.title}></h4></a>
                 </span>
               <span>By <strong>{course.author}</strong></span>
+              <span>Video Hours: {course.hours_video}</span>
                 </div>
               )
             })
