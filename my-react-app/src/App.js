@@ -45,6 +45,7 @@ function App() {
                 </span>
               <span>By <strong>{course.author}</strong></span>
               <span>Video Hours: {course.hours_video}</span>
+              <span>Number Of Lectures: {course.number_of_lectures}</span>
                 </div>
               )
             })
