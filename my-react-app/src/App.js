@@ -47,6 +47,7 @@ function App() {
               <span> | Video Hours: {course.hours_video}</span>
               <span> | Number Of Lectures: {course.number_of_lectures}</span>
               <span> | Rating: {course.rating}</span>
+              <br/><br/>
                 </div>
               )
             })
