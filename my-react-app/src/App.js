@@ -47,4 +47,4 @@ function App() {
 }
 
 
-export default CoursesList;
+export default App;
