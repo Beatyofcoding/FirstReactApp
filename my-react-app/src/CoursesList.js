@@ -1,7 +1,7 @@
 import React from "react";
 
-function CoursesList() {
-    return courses.map(function(course){
+function CoursesList(props) {
+    return props.courses.map(function(course) {
       return (
         <div key={course.id}>
         <span>

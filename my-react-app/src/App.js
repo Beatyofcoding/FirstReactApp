@@ -39,7 +39,7 @@ function App() {
     <div >
             <h1>Title Of Courses</h1>
             <hr />
-            <CoursesList />
+            <CoursesList courses={courses} />
             
             
       </div>
