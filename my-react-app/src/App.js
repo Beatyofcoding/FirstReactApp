@@ -1,4 +1,6 @@
 import React from 'react';
+import CoursesList from "./CoursesList";
+
 
 const courses = [
   {
@@ -45,4 +47,4 @@ function App() {
 }
 
 
-export default App;
+export default CoursesList;

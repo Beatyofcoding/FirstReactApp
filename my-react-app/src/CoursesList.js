@@ -1,5 +1,5 @@
 import React from "react";
-import CoursesList from "./CoursesList";
+
 function CoursesList() {
     return courses.map(function(course){
       return (
