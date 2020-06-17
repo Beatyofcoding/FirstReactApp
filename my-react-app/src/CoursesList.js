@@ -1,6 +1,6 @@
 import React from "react";
 
-function CoursesList(props) {
+const CoursesList = (props) => {
     return props.courses.map(function(course) {
       return (
         <div key={course.id}>
