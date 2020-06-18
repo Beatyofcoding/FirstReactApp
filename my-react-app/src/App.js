@@ -39,6 +39,7 @@ const App = () => {
     <div >
             <h1>Title Of Courses</h1>
             <hr />
+            <label htmlFor="searchInput">Search: </label>
             <CoursesList courses={courses} />
             
             
