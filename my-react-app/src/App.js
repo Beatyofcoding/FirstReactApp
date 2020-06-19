@@ -43,7 +43,7 @@ const App = () => {
             <h1>Title Of Courses</h1>
             <hr />
             <label htmlFor="searchInput">Search: </label>
-            <input id="searchInput" type="text" onChange={handleSearchInputChange} />
+            <input id="searchInput" type="text" onChange={handleSearchInputChange} onKeyPress={handleSearchKeyPress} />
             <CoursesList courses={courses} />
             
             
