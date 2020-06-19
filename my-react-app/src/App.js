@@ -37,6 +37,12 @@ const App = () => {
   const handleSearchInputChange = event => {
     console.log(event.target.value);
   }
+
+  const handleSearchKeyPress = event=> {
+    if (event.key === "Enter") {
+      console.log("Enter key pressed! Search Value: " + event.target.value)
+    }
+  }
   
   return (
     <div >
