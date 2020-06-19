@@ -35,7 +35,7 @@ const courses = [
 
 const App = () => {
   const handleSearchInputChange = event => {
-    console.log(event);
+    console.log(event.target.value);
   }
   
   return (
