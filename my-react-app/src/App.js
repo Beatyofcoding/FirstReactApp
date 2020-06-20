@@ -40,6 +40,10 @@ const App = () => {
  setSearchText(event.target.value);
   }
 
+  const filteredCourses = courses.filter(course =>{
+    return course.title.includes(searchText)
+  })
+
   
   
   return (
