@@ -34,6 +34,8 @@ const courses = [
 ];
 
 const App = () => {
+ const [searchText, setSearchText] = useState("");
+
   const handleSearchInputChange = event => {
     console.log(event.target.value);
   }
