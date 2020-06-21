@@ -41,8 +41,8 @@ const App = () => {
   }
 
   const filteredCourses = courses.filter(course =>{
-    return course.title.includes(searchText)
-  })
+    return course.title.includes(searchText)|| course.author.includes(searchText);
+  });
 
   
   
