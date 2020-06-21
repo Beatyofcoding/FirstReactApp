@@ -54,7 +54,7 @@ const App = () => {
             <input id="searchInput" 
                 type="text" 
                 onChange={handleSearchInputChange}  />
-            <CoursesList courses={courses} />
+            <CoursesList courses={filteredCourses} />
             
             
       </div>
