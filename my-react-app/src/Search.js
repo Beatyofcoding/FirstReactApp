@@ -9,3 +9,4 @@ const Search = ({onSearch}) => (
                 onChange={onSearch}  />
                 </div>
 );
+export default Search;
