@@ -51,10 +51,10 @@ const App = () => {
     <div >
             <h1>Title Of Courses</h1>
             <hr />
-            <label htmlFor="searchInput">Search: </label>
-            <input id="searchInput" 
-                type="text" 
-                onChange={handleSearchInputChange}  />
+
+          <Search onSearch={handleSearch} />
+
+
             <CoursesList courses={filteredCourses} />
             
             
