@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import CoursesList from "./CoursesList";
+import Search from "./Search";
 
 
 const courses = [
