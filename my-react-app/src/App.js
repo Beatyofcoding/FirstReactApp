@@ -39,6 +39,7 @@ const App = () => {
 
   const handleSearch = event => {
  setSearchText(event.target.value);
+ localStorage.setItem("searchText",event.target.value);
   }
 
   const filteredCourses = courses.filter(course =>{
