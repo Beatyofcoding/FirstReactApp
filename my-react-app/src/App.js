@@ -55,7 +55,7 @@ const App = () => {
             <h1>Title Of Courses</h1>
             <hr />
 
-          <Search onSearch={handleSearch} />
+          <Search value={searchText}  onSearch={handleSearch} />
 
 
             <CoursesList courses={filteredCourses} />
