@@ -36,7 +36,7 @@ const courses = [
 
 const App = () => {
  const [searchText, setSearchText] = useState(
-   localStorage.getItem("searchText") 
+   localStorage.getItem("searchText") || ""
  );
 
   const handleSearch = event => {
