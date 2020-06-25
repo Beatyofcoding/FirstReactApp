@@ -3,7 +3,7 @@ import CoursesList from "./CoursesList";
 import Search from "./Search";
 
 
-const courses_date = [
+const courses_data = [
   {
     id: 1,
     title: "React - The Complete Guide (incl Hooks, React Router, Redux)",
@@ -35,7 +35,10 @@ const courses_date = [
 ];
 
 const App = () => {
- const [searchText, setSearchText] = useState(
+ 
+  const [courses, setCourses] = useState([])
+ 
+  const [searchText, setSearchText] = useState(
    localStorage.getItem("searchText") || ""
  );
 
