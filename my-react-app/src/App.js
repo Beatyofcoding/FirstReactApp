@@ -43,6 +43,9 @@ const App = () => {
  setSearchText(event.target.value);
  localStorage.setItem("searchText",event.target.value);
   }
+  useEffect(() => {
+    localStorage.setItem("searchText",searchText)
+  },[searchText])
 
   const filteredCourses = courses.filter(course =>{
     return course.title.includes(searchText)|| course.author.includes(searchText);
