@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import CoursesList from "./CoursesList";
 import Search from "./Search";
 
