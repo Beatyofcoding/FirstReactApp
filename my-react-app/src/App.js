@@ -3,7 +3,7 @@ import CoursesList from "./CoursesList";
 import Search from "./Search";
 
 
-const courses = [
+const courses_date = [
   {
     id: 1,
     title: "React - The Complete Guide (incl Hooks, React Router, Redux)",
