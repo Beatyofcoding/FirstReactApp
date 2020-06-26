@@ -55,6 +55,11 @@ const App = () => {
         )
      );
   
+     useEffect(() => {
+        getCoursesAsync().then(result => {
+          setCourses(result.courses);
+        })
+     }, []);
 
   useEffect(() => {
     localStorage.setItem("searchText",searchText)
