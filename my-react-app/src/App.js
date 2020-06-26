@@ -47,13 +47,14 @@ const App = () => {
  localStorage.setItem("searchText",event.target.value);
   }
 
-  const getCoursesAsync = () => {
+  const getCoursesAsync = () => 
     new Promise(resolve => 
       setTimeout(
-        ()=> resolve({courses: courses_data})
-      )
-     )
-  }
+        ()=> resolve({courses: courses_data}),
+        2000
+        )
+     );
+  
 
   useEffect(() => {
     localStorage.setItem("searchText",searchText)
