@@ -48,7 +48,11 @@ const App = () => {
   }
 
   const getCoursesAsync = () => {
-    new Promise(resolve => )
+    new Promise(resolve => 
+      setTimeout(
+        ()=> resolve({courses: courses_data})
+      )
+     )
   }
 
   useEffect(() => {
