@@ -60,6 +60,7 @@ const App = () => {
        setIsLoading(true);
         getCoursesAsync().then(result => {
           setCourses(result.courses);
+          setIsLoading(false);
         })
      }, []);
 
