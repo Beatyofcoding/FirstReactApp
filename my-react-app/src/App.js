@@ -80,7 +80,15 @@ const App = () => {
             <hr />
 
           <Search value={searchText}  onSearch={handleSearch} />
+          
 
+          {isLoading ? (
+            <p>Loading Please Wait ..</p>
+
+          ):(
+            <p>Display Courses Test Working :) </p>
+
+          )}
 
             <CoursesList courses={filteredCourses} />
             
