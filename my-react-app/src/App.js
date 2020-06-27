@@ -37,6 +37,7 @@ const courses_data = [
 const App = () => {
  
   const [courses, setCourses] = useState([])
+  const [isLoading, setIsLoading] = useState(false);
  
   const [searchText, setSearchText] = useState(
    localStorage.getItem("searchText") || ""
