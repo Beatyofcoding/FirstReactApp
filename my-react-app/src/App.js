@@ -57,6 +57,7 @@ const App = () => {
      );
   
      useEffect(() => {
+       setIsLoading(true);
         getCoursesAsync().then(result => {
           setCourses(result.courses);
         })
