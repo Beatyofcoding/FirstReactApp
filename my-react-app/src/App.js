@@ -34,6 +34,13 @@ const courses_data = [
   }
 ];
 
+const coursesReducer = (state, action) => {
+  switch(action.type)
+  case "SET_COURSES":
+    return action.payload;
+  default:
+    throw new Error();
+}
 const App = () => {
  
   const [courses, setCourses] = useState([])
