@@ -43,7 +43,9 @@ const coursesReducer = (state, action) => {
 }
 const App = () => {
  
-  const [courses, setCourses] = useState([])
+  const [course, dispatchCourses] = useReducer(coursesReducer,
+    []
+    );
   const [isLoading, setIsLoading] = useState(false);
  
   const [searchText, setSearchText] = useState(
