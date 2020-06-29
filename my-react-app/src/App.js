@@ -49,7 +49,7 @@ const coursesReducer = (state, action) => {
 };
 const App = () => {
  
-  const [course, dispatchCourses] = useReducer(coursesReducer,
+  const [courses, dispatchCourses] = useReducer(coursesReducer,
     []
     );
   const [isLoading, setIsLoading] = useState(false);
@@ -84,10 +84,10 @@ const App = () => {
 
   useEffect(() => {
     localStorage.setItem("searchText",searchText)
-  },[searchText])
+  }, [searchText]);
 
   const filteredCourses = courses.filter(course =>{
-    return course.title.includes(searchText)|| course.author.includes(searchText);
+    return course.title.includes(searchText) || course.author.includes(searchText);
   });
 
   
