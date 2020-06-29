@@ -70,7 +70,10 @@ const App = () => {
      useEffect(() => {
        setIsLoading(true);
         getCoursesAsync().then(result => {
-          setCourses(result.courses);
+         dispatchCourses({
+           type: "SET_COURSES",
+           payload: result.courses
+         });
           setIsLoading(false);
         })
      }, []);
