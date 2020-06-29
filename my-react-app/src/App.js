@@ -40,6 +40,9 @@ const coursesReducer = (state, action) => {
     case "SET_COURSES":
       return action.payload;
       case "REMOVE_COURSE":
+        return state.filter(
+          course => action.payload.id
+        )
       default:
         throw new Error();
       }
