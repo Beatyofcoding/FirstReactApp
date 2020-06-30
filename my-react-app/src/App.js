@@ -64,7 +64,12 @@ const App = () => {
 //  localStorage.setItem("searchText",event.target.value);
   }
   // Attention
-  // const
+  const handleRemoveCourse = course => {
+    dispatchCourses({
+      type: "REMOVE_COURSE",
+      payload: course
+    });
+  }
 
   const getCoursesAsync = () => 
     new Promise(resolve => 
