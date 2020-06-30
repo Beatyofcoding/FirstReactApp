@@ -41,7 +41,7 @@ const coursesReducer = (state, action) => {
       return action.payload;
       case "REMOVE_COURSE":
         return state.filter(
-          course => action.payload.id
+          course => action.payload.id !== courses.id
         )
       default:
         throw new Error();
@@ -57,7 +57,7 @@ const App = () => {
   const [searchText, setSearchText] = useState(
    localStorage.getItem("searchText") || ""
  );
-
+// Referdad
   const handleSearch = event => {
  setSearchText(event.target.value);
  localStorage.setItem("searchText",event.target.value);
