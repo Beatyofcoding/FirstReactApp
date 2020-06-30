@@ -57,11 +57,14 @@ const App = () => {
   const [searchText, setSearchText] = useState(
    localStorage.getItem("searchText") || ""
  );
-// Referdad
+
+ 
   const handleSearch = event => {
  setSearchText(event.target.value);
- localStorage.setItem("searchText",event.target.value);
+//  localStorage.setItem("searchText",event.target.value);
   }
+  // Attention
+  // const
 
   const getCoursesAsync = () => 
     new Promise(resolve => 
