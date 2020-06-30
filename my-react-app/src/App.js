@@ -104,11 +104,11 @@ const App = () => {
             <p>Loading Please Wait ..</p>
 
           ):(
-            <p>Display Courses Test Working :) </p>
-
-          )}
-
             <CoursesList courses={filteredCourses} />
+            
+            )}
+
+            {/* <p>Display Courses Test Working :) </p> */}
             
             
       </div>
