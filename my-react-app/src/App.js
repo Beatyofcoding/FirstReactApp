@@ -112,7 +112,7 @@ const App = () => {
             <p>Loading Please Wait ..</p>
 
           ):(
-            <CoursesList courses={filteredCourses} handleRemoveCourse={handleRemoveCourse}/>
+            <CoursesList courses={filteredCourses} handleRemoveCourse={handleRemoveCourse} />
             
             )}
 

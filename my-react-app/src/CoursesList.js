@@ -1,6 +1,6 @@
 import React from "react";
 
-const CoursesList = ({courses}) => {
+const CoursesList = ({courses, handleRemoveCourse}) => {
     return courses.map(course => {
       return (
         <div key={course.id}>
