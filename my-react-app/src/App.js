@@ -53,7 +53,11 @@ const coursesReducer = (state, action) => {
       return {
 
       };
-      
+      case "FETCH_COURSES_SUCCESS":
+        return {
+          
+        }
+
   }
 }
 const App = () => {
