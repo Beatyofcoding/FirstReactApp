@@ -47,6 +47,15 @@ const courses_data = [
 //         throw new Error();
 //       }
 // };
+const coursesReducer = (state, action) => {
+  switch(action.type) {
+    case "FETCH_COURSE_START":
+      return {
+
+      };
+      
+  }
+}
 const App = () => {
  
   const [courses, dispatchCourses] = useReducer(coursesReducer,
