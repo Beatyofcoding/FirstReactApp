@@ -55,9 +55,12 @@ const coursesReducer = (state, action) => {
       };
       case "FETCH_COURSES_SUCCESS":
         return {
-          
-        }
 
+        };
+    case "REMOVE_COURSE":
+      return {
+
+      };
   }
 }
 const App = () => {
