@@ -61,6 +61,8 @@ const coursesReducer = (state, action) => {
       return {
 
       };
+      default:
+        throw new Error();
   }
 }
 const App = () => {
