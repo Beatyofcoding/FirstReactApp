@@ -51,14 +51,17 @@ const coursesReducer = (state, action) => {
   switch(action.type) {
     case "FETCH_COURSE_START":
       return {
+        ...state,
 
       };
       case "FETCH_COURSES_SUCCESS":
         return {
+          ...state,
 
         };
     case "REMOVE_COURSE":
       return {
+        ...state,
 
       };
       default:
