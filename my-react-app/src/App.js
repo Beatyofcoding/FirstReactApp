@@ -52,12 +52,12 @@ const coursesReducer = (state, action) => {
     case "FETCH_COURSE_START":
       return {
         ...state,
+        isLoading: true
 
       };
       case "FETCH_COURSES_SUCCESS":
         return {
           ...state,
-        isLoading: true
         };
     case "REMOVE_COURSE":
       return {
