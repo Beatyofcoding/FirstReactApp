@@ -65,6 +65,9 @@ const coursesReducer = (state, action) => {
     case "REMOVE_COURSE":
       return {
         ...state,
+        data :  state.filter(
+           course => action.payload.id !== course.id
+         )
 
       };
       default:
