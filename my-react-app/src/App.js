@@ -59,6 +59,7 @@ const coursesReducer = (state, action) => {
         return {
           ...state,
           isLoading: false
+          data: action.payload
 
         };
     case "REMOVE_COURSE":
