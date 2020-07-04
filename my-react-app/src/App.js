@@ -58,6 +58,8 @@ const coursesReducer = (state, action) => {
       case "FETCH_COURSES_SUCCESS":
         return {
           ...state,
+          isLoading: false
+
         };
     case "REMOVE_COURSE":
       return {
