@@ -100,23 +100,17 @@ const App = () => {
     });
   }
 
-  const getCoursesAsync = () => 
-    new Promise(resolve => 
-      setTimeout(
-        ()=> resolve({courses: courses_data}),
-        2000
-        )
-     );
+  // const getCoursesAsync = () => 
+  //   new Promise(resolve => 
+  //     setTimeout(
+  //       ()=> resolve({courses: courses_data}),
+  //       2000
+  //       )
+  //    );
   
      useEffect(() => {
-       setIsLoading(true);
-        getCoursesAsync().then(result => {
-         dispatchCourses({
-           type: "SET_COURSES",
-           payload: result.courses
-         });
-          setIsLoading(false);
-        })
+      
+    
      }, []);
 
   useEffect(() => {
