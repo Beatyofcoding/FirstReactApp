@@ -75,6 +75,7 @@ const coursesReducer = (state, action) => {
   }
 }
 const App = () => {
+  const STRAPI_API_ENDPOINT = "http://localhost:1337/courses";
  
   const [courses, dispatchCourses] = useReducer(
     coursesReducer,
