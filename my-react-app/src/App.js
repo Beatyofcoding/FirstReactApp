@@ -109,6 +109,7 @@ const App = () => {
   //    );
   
      useEffect(() => {
+       dispatchCourses({type: "FETCH_COURSES_START"})
       
     
      }, []);
