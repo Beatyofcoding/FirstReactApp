@@ -76,8 +76,9 @@ const coursesReducer = (state, action) => {
 }
 const App = () => {
  
-  const [courses, dispatchCourses] = useReducer(coursesReducer,
-    []
+  const [courses, dispatchCourses] = useReducer(
+    coursesReducer,
+    {data: [], isLoading: false}
     );
   const [isLoading, setIsLoading] = useState(false);
  
