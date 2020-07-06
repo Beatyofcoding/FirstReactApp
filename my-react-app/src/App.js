@@ -112,6 +112,11 @@ const App = () => {
        dispatchCourses({type: "FETCH_COURSES_START"})
        fetch(STRAPI_API_ENDPOINT)
         .then(response => response.json())
+        .then(result => {
+          dispatchCourses({
+            
+          })
+        }
       
     
      }, []);
