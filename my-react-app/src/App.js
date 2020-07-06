@@ -111,6 +111,7 @@ const App = () => {
      useEffect(() => {
        dispatchCourses({type: "FETCH_COURSES_START"})
        fetch(STRAPI_API_ENDPOINT)
+        .then()
       
     
      }, []);
