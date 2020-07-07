@@ -115,6 +115,8 @@ const App = () => {
         .then(result => {
           dispatchCourses({
             type: "FETCH_COURSES_SUCCESS"
+            payload: result
+          });
 
           })
         }
