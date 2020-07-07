@@ -129,7 +129,7 @@ const App = () => {
     localStorage.setItem("searchText",searchText)
   }, [searchText]);
 
-  const filteredCourses = courses.filter(course =>{
+  const filteredCourses = courses.data.filter(course =>{
     return course.title.includes(searchText) || course.author.includes(searchText);
   });
 
