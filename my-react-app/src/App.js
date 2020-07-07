@@ -116,10 +116,11 @@ const App = () => {
           dispatchCourses({
             type: "FETCH_COURSES_SUCCESS"
             payload: result
-          });
+           });
 
           })
-        }
+
+        .catch(() => console.log("Error fetching courses from back-end.."))
       
     
      }, []);
