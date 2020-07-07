@@ -114,7 +114,8 @@ const App = () => {
         .then(response => response.json())
         .then(result => {
           dispatchCourses({
-            
+            type: "FETCH_COURSES_SUCCESS"
+
           })
         }
       
