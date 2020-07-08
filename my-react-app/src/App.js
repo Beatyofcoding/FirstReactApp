@@ -58,7 +58,7 @@ const coursesReducer = (state, action) => {
       case "FETCH_COURSES_SUCCESS":
         return {
           ...state,
-          isLoading: false
+          isLoading: false,
           data: action.payload
 
         };
@@ -114,7 +114,7 @@ const App = () => {
         .then(response => response.json())
         .then(result => {
           dispatchCourses({
-            type: "FETCH_COURSES_SUCCESS"
+            type: "FETCH_COURSES_SUCCESS",
             payload: result
            });
 
