@@ -81,7 +81,7 @@ const App = () => {
     coursesReducer,
     {data: [], isLoading: false}
     );
-  const [isLoading, setIsLoading] = useState(false);
+  // const [isLoading, setIsLoading] = useState(false);
  
   const [searchText, setSearchText] = useState(
    localStorage.getItem("searchText") || ""
@@ -109,7 +109,7 @@ const App = () => {
   //    );
   
      useEffect(() => {
-       dispatchCourses({type: "FETCH_COURSES_START"})
+       dispatchCourses({type: "FETCH_COURSES_START"});
        fetch(STRAPI_API_ENDPOINT)
         .then(response => response.json())
         .then(result => {
@@ -117,8 +117,7 @@ const App = () => {
             type: "FETCH_COURSES_SUCCESS",
             payload: result
            });
-
-          })
+        })
 
         .catch(() => console.log("Error fetching courses from back-end.."))
       

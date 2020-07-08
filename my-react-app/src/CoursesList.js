@@ -5,9 +5,9 @@ const CoursesList = ({courses, handleRemoveCourse}) => {
       return (
         <div key={course.id}>
         <span>
-          <a href={course.url}><h4>{course.title}></h4></a>
+          <a href={course.url}><h4>{course.title}</h4></a>
         </span>
-      <span>By <strong>{course.author.map(author => author.first_name + " " + author.last_name)}</strong></span>
+      <span>By <strong>{course.authors.map(author => author.first_name + " " + author.last_name)}</strong></span>
       <span> | Video Hours: {course.hours_video}</span>
       <span> | Number Of Lectures: {course.number_of_lectures}</span>
       <span> | Rating: {course.rating}</span>
