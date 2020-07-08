@@ -143,7 +143,7 @@ const App = () => {
           <Search value={searchText}  onSearch={handleSearch} />
           
 
-          {isLoading ? (
+          {courses.isLoading ? (
             <p>Loading Please Wait ..</p>
 
           ):(
